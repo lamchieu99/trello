@@ -2,8 +2,12 @@ import React from 'react'
 import './BoarcContentTask.scss'
 
 function BoarcContentTask(props) {
+    const {task} = props
+
     return (
-        <li><img src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg" alt="abc" />Title:
+        <li>
+            { task.cover && <img src={task.cover} className="task-cover" alt="abc" /> }
+            { task.title }
         </li>
     )
 }
