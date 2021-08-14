@@ -1,5 +1,5 @@
 import { initData } from 'actions/initData'
-import BoarcContentColumn from 'component/BoardContentColumn/BoardContentColumn'
+import BoardContentColumn from 'component/BoardContentColumn/BoardContentColumn'
 import { isEmpty } from 'lodash'
 import React, { useEffect, useRef, useState } from 'react'
 import { Col, Container as BootstrapContainer, Form, Row } from 'react-bootstrap'
@@ -136,7 +136,7 @@ function BoardContent() {
                 >
                     {columns.map((column, index) =>
                         <Draggable key={index}>
-                            <BoarcContentColumn column={column} onCardDrop={onCardDrop} deleteAllColumn={deleteAllColumn} />
+                            <BoardContentColumn column={column} onCardDrop={onCardDrop} deleteAllColumn={deleteAllColumn} />
                         </Draggable>
                     )}
                 </Container>
@@ -172,4 +172,3 @@ function BoardContent() {
 }
 
 export default BoardContent
-

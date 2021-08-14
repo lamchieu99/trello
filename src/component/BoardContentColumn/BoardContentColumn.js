@@ -210,4 +210,3 @@ function BoardContentColumn(props) {
 }
 
 export default BoardContentColumn
-
