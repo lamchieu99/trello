@@ -1,8 +1,8 @@
-import React from 'react';
-import { FaBuromobelexperte, FaHouseDamage, FaInfoCircle, FaPlus, FaRegBell, FaSearch } from "react-icons/fa";
-import './AppbarHeader.scss';
+import React from 'react'
+import { FaBuromobelexperte, FaHouseDamage, FaInfoCircle, FaPlus, FaRegBell, FaSearch } from 'react-icons/fa'
+import './AppbarHeader.scss'
 
-function AppbarHeader(props) {
+function AppbarHeader() {
     return (
         <header className="trello__header">
             <div className=" header__left">

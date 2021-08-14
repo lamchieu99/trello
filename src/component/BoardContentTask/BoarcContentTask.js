@@ -1,16 +1,17 @@
 import React from 'react'
-import './BoarcContentTask.scss'
+import { FaPen } from 'react-icons/fa'
+import './BoardContentTask.scss'
 
-function BoarcContentTask(props) {
-    const {task} = props
-
+function BoardContentTask(props) {
+    const { task } = props
     return (
-        <li>
-            { task.cover && <img src={task.cover} className="task-cover" alt="abc" /> }
+        <div className = "content__details">
+            { task.cover && <img src={task.cover} draggable="false" className="task-cover" alt="abc" /> }
             { task.title }
-        </li>
+            <FaPen className="icon__edit"/>
+        </div>
     )
 }
 
-export default BoarcContentTask
+export default BoardContentTask
 
