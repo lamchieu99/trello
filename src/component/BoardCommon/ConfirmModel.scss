@@ -1,0 +1,41 @@
+.modal {
+    > * {
+        width: 30%;
+
+        .modal__header {
+            padding: 0.5rem 1rem;
+        }
+
+        .modal__body {
+            padding: 0.5rem 1rem;
+        }
+
+        .modal__footer {
+            padding: 0.5rem;
+            margin: 0 5px;
+
+            .button {
+                padding: 0.3rem 0.5rem;
+                font-size: 14px;
+            }
+
+            .button--save {
+                color: black;
+                background-color: #17271a38;
+                border-color: #17271a38;
+                &:hover {
+                    background-color: #17271a47;
+                }
+            }
+
+            .button--close {
+                color: black;
+                background-color: #93bd8a3d;
+                border-color: #93bd8a3d;
+                &:hover {
+                    background-color: #93bd8a61;
+                }
+            }
+        }
+    }
+}

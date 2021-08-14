@@ -2,7 +2,7 @@ export const initData = {
     boards: [
         {
             id: 'board-1',
-            columnOrder: ['column-3', 'column-2', 'column-1'],
+            columnOrder: ['column-1', 'column-2', 'column-3'],
             columns: [
                 {
                     id: 'column-1',
@@ -26,7 +26,7 @@ export const initData = {
                         'task-4', 'task-5', 'task-6'
                     ],
                     tasks: [
-                        { id: 'task-4', boardId: 'board-1', columnId: 'column-1', title: 'Title of task 4', cover: null },
+                        { id: 'task-4', boardId: 'board-1', columnId: 'column-1', title: 'Title of task 4', cover: 'https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg' },
                         { id: 'task-5', boardId: 'board-2', columnId: 'column-1', title: 'Title of task 5', cover: null },
                         { id: 'task-6', boardId: 'board-3', columnId: 'column-1', title: 'Title of task 6', cover: null }
                     ]
@@ -44,8 +44,7 @@ export const initData = {
                         { id: 'task-9', boardId: 'board-3', columnId: 'column-1', title: 'Title of task 9', cover: null }
                     ]
                 }
-                
-            ],
+            ]
         }
     ]
 }

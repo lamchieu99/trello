@@ -5,98 +5,83 @@
     position: relative;
     animation: change 60s ease-in-out infinite;
     padding: 10px 8px;
-}
 
-.header__left {
-    display: flex;
-    justify-content: flex-start;
-    flex-grow: 1;
-    flex-basis: 100%;
-}
+    .header__left {
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 1;
+        flex-basis: 100%;
 
-.header__right {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-    flex-basis: 100%;
-}
+        .header__input {
+            position: relative;
 
-.header__input {
-    position: relative;
-}
+            input {
+                height: 35px;
+                padding: 0 40px 0 15px;
+                width: 100%;
+                border-radius: 5px;
+                font-size: 13px;
+                position: relative;
+                background-color: rgba(255, 255, 255, 0.3);
+                border: none;
 
-.header__input input {
-    height: 35px;
-    padding: 0 40px 0 15px;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 13px;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-}
+                &::placeholder {
+                    color: #fff;
+                }
 
-::placeholder {
-    color: #fff;
-}
+                &:hover {
+                    background-color: #ffffff;
+                    &::placeholder {
+                        color: #999;
+                    }
+                }
+            }
 
-.header__input:hover ::placeholder {
-    color: #999;
-}
-.header__input:hover input {
-    background-color: #ffffff;
-}
+            .icon__search {
+                position: absolute;
+                font-size: 15px;
+                right: 13px;
+                top: 10px;
+                cursor: pointer;
+            }
 
-.icon__search {
-    position: absolute;
-    font-size: 15px;
-    right: 13px;
-    top: 10px;
-    cursor: pointer;
-}
+            &:hover {
+                .icon__search {
+                    color: #999;
+                }
+            }
+        }
+    }
 
-.header__input:hover .icon__search {
-    color: #999;
-}
-.header__hover {
-    border-radius: 3px;
-    border: 0;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-    display: flex;
-    font-weight: bold;
-    line-height: 32px;
-    margin: 0 4px 0 0;
-    padding: 5px 10px;
-    white-space: nowrap;
-}
+    .header__center {
+        width: 180px;
+        height: 16px;
+        margin: 7px 0;
+        position: relative;
+        opacity: 0.8;
 
-.header__hover:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-}
+        &:hover {
+            opacity: 1;
+        }
 
-.header__center {
-    width: 180px;
-    height: 16px;
-    margin: 7px 0;
-    position: relative;
-    opacity: 0.8;
-}
+        &::before {
+            content: "";
+            background-image: url(https://a.trellocdn.com/prgb/dist/images/header-logo-spirit.d947df93bc055849898e.gif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-.header__center:hover {
-    opacity: 1;
-}
-.header__center::before {
-    content: "";
-    background-image: url(https://a.trellocdn.com/prgb/dist/images/header-logo-spirit.d947df93bc055849898e.gif);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    .header__right {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
 }
